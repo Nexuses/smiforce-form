@@ -132,9 +132,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <div className="container mx-auto my-0 px-4 py-[10px]">
-        <div className="grid lg:grid-cols-2 gap-12 items-stretch max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-[58%_42%] xl:grid-cols-[55%_45%] gap-12 items-stretch max-w-7xl mx-auto">
           {/* Left side - Image */}
-          <div className="relative flex h-full">
+          <div className="relative flex h-full lg:scale-[1.05] xl:scale-100 transition-transform">
             <Image
               src="https://22527425.fs1.hubspotusercontent-na2.net/hubfs/22527425/Intellectus/Screenshot%202025-10-28%20at%201.01.56%20PM.png"
               alt="SmiForce CIO & CISO AI Reporting Dashboard"
@@ -146,28 +146,28 @@ export default function Home() {
           </div>
 
           {/* Right side - Content */}
-          <div className={`space-y-6 flex flex-col h-full justify-start ${showForm ? "pt-0 lg:pt-0" : "pt-10"}`}>
+          <div className={`space-y-5 lg:space-y-6 xl:space-y-8 flex flex-col h-full justify-start ${showForm ? "pt-0 lg:pt-0" : "pt-10"}`}>
             {!showForm && (
               <>
-                <h1 className="text-2xl lg:text-3xl font-bold leading-tight">
+                <h1 className="text-2xl lg:text-[28px] xl:text-3xl font-bold leading-tight">
                   Transform Data into <span className="text-[#C4342B]">Strategic</span>
                   <br />
                   <span className="text-[#C4342B]">Insights with SmiForce</span>
                 </h1>
 
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base lg:text-[17px] xl:text-lg text-gray-700 leading-relaxed">
                   SmiForce's AI-powered CIO & CISO Reporting Dashboard overcomes data fragmentation, enhances visibility,
                   and automates reporting, delivering actionable insights to drive smarter decisions and boost operational
                   efficiency.
                 </p>
 
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-base lg:text-[17px] xl:text-lg text-gray-700 leading-relaxed">
                   Download the Solution Brief to Discover How SmiForce Can Drive Your Data Strategy!
                 </p>
 
                 <Button
                   onClick={() => setShowForm(true)}
-                  className="bg-[#C4342B] hover:bg-[#A02D24] text-white px-8 py-6 text-lg font-semibold w-fit"
+                  className="bg-[#C4342B] hover:bg-[#A02D24] text-white px-7 py-5 lg:px-7 lg:py-5 xl:px-8 xl:py-6 text-base lg:text-[15px] xl:text-lg font-semibold w-fit"
                   size="lg"
                 >
                   DOWNLOAD NOW
