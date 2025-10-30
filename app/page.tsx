@@ -131,10 +131,10 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white">
-      <div className="container mx-auto my-0 px-4 py-[10px]">
-        <div className="grid grid-cols-1 lg:grid-cols-[58%_42%] xl:grid-cols-[55%_45%] gap-12 items-stretch max-w-7xl mx-auto">
+      <div className="w-full my-0 px-0 py-[10px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch w-full">
           {/* Left side - Image */}
-          <div className="relative flex h-full lg:scale-[1.05] xl:scale-100 transition-transform">
+          <div className="relative flex h-full transition-transform">
             <Image
               src="https://22527425.fs1.hubspotusercontent-na2.net/hubfs/22527425/Intellectus/Screenshot%202025-10-28%20at%201.01.56%20PM.png"
               alt="SmiForce CIO & CISO AI Reporting Dashboard"
@@ -176,7 +176,7 @@ export default function Home() {
             )}
 
             {showForm && (
-              <Card className="w-full h-full border border-gray-200 shadow-md flex flex-col">
+              <Card className="w-full border border-gray-200 shadow-md flex flex-col mt-[50px]">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#C4342B] to-[#A02D24]">
@@ -233,10 +233,6 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="rounded-md bg-[#FFF5F4] border border-[#F5D3D0] p-3 text-sm text-[#6F1B16]">
-                      We respect your privacy. We will never share your information.
-                    </div>
-
                     <div className="flex flex-col sm:flex-row gap-3 pt-2">
                       <Button
                         type="button"
@@ -253,11 +249,6 @@ export default function Home() {
                     </div>
                   </form>
                 </CardContent>
-                <CardFooter className="pt-0">
-                  <p className="text-xs text-gray-500">
-                    By clicking Download, you agree to receive related communications. You can unsubscribe anytime.
-                  </p>
-                </CardFooter>
               </Card>
             )}
           </div>
