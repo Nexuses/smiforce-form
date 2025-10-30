@@ -157,11 +157,11 @@ export default function Home() {
 
                 <p className="text-[15px] lg:text-[15px] xl:text-[16px] text-gray-700 leading-relaxed">
                   SmiForce's AI-powered CIO & CISO Reporting Dashboard overcomes
-                  <br /> 
+                  <br className="hidden lg:block" />
                   data fragmentation, enhances visibility, and automates reporting,
-                  <br /> 
+                  <br className="hidden lg:block" />
                    delivering actionable insights to drive smarter decisions and boost operational
-                   <br /> 
+                   <br className="hidden lg:block" />
                   efficiency.
                 </p>
 
