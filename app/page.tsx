@@ -176,7 +176,7 @@ export default function Home() {
             )}
 
             {showForm && (
-              <Card className="w-full border border-gray-200 shadow-md flex flex-col mt-[50px]">
+              <Card className="w-full h-[calc(100%_-_20px)] my-[10px] border border-gray-200 shadow-md flex flex-col">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#C4342B] to-[#A02D24]">
