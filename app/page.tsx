@@ -146,28 +146,32 @@ export default function Home() {
           </div>
 
           {/* Right side - Content */}
-          <div className={`space-y-5 lg:space-y-6 xl:space-y-8 flex flex-col h-full justify-start ${showForm ? "pt-0 lg:pt-0" : "pt-10"}`}>
+          <div className={`space-y-5 lg:space-y-6 xl:space-y-7 flex flex-col h-full justify-start pl-[10px] pr-[10px] lg:pl-0 lg:pr-0 ${showForm ? "pt-0 lg:pt-0" : "pt-10"}`}>
             {!showForm && (
               <>
-                <h1 className="text-2xl lg:text-[28px] xl:text-3xl font-bold leading-tight">
+                <h1 className="text-xl lg:text-[24px] xl:text-[26px] font-bold leading-tight">
                   Transform Data into <span className="text-[#C4342B]">Strategic</span>
                   <br />
                   <span className="text-[#C4342B]">Insights with SmiForce</span>
                 </h1>
 
-                <p className="text-base lg:text-[17px] xl:text-lg text-gray-700 leading-relaxed">
-                  SmiForce's AI-powered CIO & CISO Reporting Dashboard overcomes data fragmentation, enhances visibility,
-                  and automates reporting, delivering actionable insights to drive smarter decisions and boost operational
+                <p className="text-[15px] lg:text-[15px] xl:text-[16px] text-gray-700 leading-relaxed">
+                  SmiForce's AI-powered CIO & CISO Reporting Dashboard overcomes
+                  <br /> 
+                  data fragmentation, enhances visibility, and automates reporting,
+                  <br /> 
+                   delivering actionable insights to drive smarter decisions and boost operational
+                   <br /> 
                   efficiency.
                 </p>
 
-                <p className="text-base lg:text-[17px] xl:text-lg text-gray-700 leading-relaxed">
+                <p className="text-[15px] lg:text-[15px] xl:text-[16px] text-gray-700 leading-relaxed">
                   Download the Solution Brief to Discover How SmiForce Can Drive Your Data Strategy!
                 </p>
 
                 <Button
                   onClick={() => setShowForm(true)}
-                  className="bg-[#C4342B] hover:bg-[#A02D24] text-white px-7 py-5 lg:px-7 lg:py-5 xl:px-8 xl:py-6 text-base lg:text-[15px] xl:text-lg font-semibold w-fit"
+                  className="bg-[#C4342B] hover:bg-[#A02D24] text-white px-7 py-5 lg:px-7 lg:py-5 xl:px-7 xl:py-5 text-base lg:text-[15px] xl:text-[16px] font-semibold w-fit"
                   size="lg"
                 >
                   DOWNLOAD NOW
@@ -176,7 +180,7 @@ export default function Home() {
             )}
 
             {showForm && (
-              <Card className="w-full h-[calc(100%_-_20px)] my-[10px] border border-gray-200 shadow-md flex flex-col">
+              <Card className="w-full h-[calc(100%_-_120px)] mt-[55px] mb-[65px] border border-gray-200 shadow-md flex flex-col">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#C4342B] to-[#A02D24]">
