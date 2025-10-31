@@ -146,7 +146,7 @@ export default function Home() {
           </div>
 
           {/* Right side - Content */}
-          <div className={`space-y-5 lg:space-y-6 xl:space-y-7 flex flex-col h-full justify-start pl-[10px] pr-[10px] lg:pl-0 lg:pr-0 ${showForm ? "pt-0 lg:pt-0" : "pt-10"}`}>
+          <div className={`space-y-5 lg:space-y-6 xl:space-y-7 flex flex-col h-full ${showForm ? "justify-start" : "justify-center"} pl-[10px] pr-[10px] lg:pl-0 lg:pr-0 ${showForm ? "pt-0 lg:pt-0" : "pt-0"}`}>
             {!showForm && (
               <>
                 <h1 className="text-xl lg:text-[24px] xl:text-[26px] font-bold leading-tight">
@@ -179,8 +179,8 @@ export default function Home() {
               </>
             )}
 
-            {showForm && (
-              <Card className="w-full h-[calc(100%_-_120px)] mt-[55px] mb-[65px] border border-gray-200 shadow-md flex flex-col">
+              {showForm && (
+               <Card className="w-full h-[calc(100%_-_120px)] mt-[55px] mb-0 border border-gray-200 shadow-md flex flex-col">
                 <CardHeader className="pb-4">
                   <CardTitle className="text-2xl">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#C4342B] to-[#A02D24]">
